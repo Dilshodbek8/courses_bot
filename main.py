@@ -1,4 +1,3 @@
-from telebot import types
 import telebot
 import requests
 import buttons
