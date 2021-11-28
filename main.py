@@ -66,9 +66,9 @@ def start_message(message):
     bot.send_message(message.from_user.id, 'Qaysi Tildan kurslar qidiryabsiz \n🇬🇧 🇷🇺 🇰🇷 🇯🇵 🇦🇪 🇩🇪 🇫🇷 🇨🇳',
                      reply_markup=buttons.buttons_langs())
 
-
 @bot.callback_query_handler(func=lambda m: True)
 def StudyCentres(call):
+
     if call.data == 'subjects':
         bot.send_message(call.from_user.id, 'Qaysi yo\'nalishda kurslar qidiryabsiz \n📚📙📘💻📱',
                          reply_markup=buttons.buttons_subjects())

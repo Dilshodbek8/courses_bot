@@ -1,14 +1,6 @@
 from telebot import types
 
 
-def langs():
-    markup = types.InlineKeyboardMarkup(row_width=2)
-    uz = types.InlineKeyboardButton('Uzb', callback_data='uzb')
-    ru = types.InlineKeyboardButton('Rus', callback_data='rus')
-    markup.add(ru, uz)
-    return markup
-
-
 def button_start():
     markup = types.InlineKeyboardMarkup(row_width=2)
     subj = types.InlineKeyboardButton('Fanlar', callback_data='subjects')
@@ -38,7 +30,8 @@ def buttons_subjects():
     biology = types.InlineKeyboardButton('biology🧪', callback_data='biology')
     robototehnika = types.InlineKeyboardButton('🤖 tehnika', callback_data='robototehnika')
     mobile_developing = types.InlineKeyboardButton('📱 developing', callback_data='mobile_developing')
-    markup.add(python, js, math, history, smm, fizika, flutter, php, ios, frontend, biology, robototehnika, literature, ielts, chemistry, ai, java, graphic_design, mobile_developing)
+    markup.add(python, js, math, history, smm, fizika, flutter, php, ios, frontend, biology, robototehnika, literature,
+               ielts, chemistry, ai, java, graphic_design, mobile_developing)
     return markup
 
 
